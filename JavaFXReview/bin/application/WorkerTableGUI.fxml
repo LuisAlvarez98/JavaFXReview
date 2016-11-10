@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.shape.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="500.0" prefWidth="500.0" style="-fx-background-color: #3F424A;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.WorkerTableController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#73818d" height="44.0" stroke="BLACK" strokeType="INSIDE" width="500.0" />
+      <Button fx:id="backButton" layoutX="20.0" layoutY="5.0" mnemonicParsing="false" onAction="#backButtonPressed" prefHeight="25.0" prefWidth="71.0" stylesheets="@application.css" text="Back" />
+      <TableView fx:id="dataTable" layoutX="21.0" layoutY="65.0" prefHeight="321.0" prefWidth="451.0">
+        <columns>
+          <TableColumn fx:id="firstNameCol" prefWidth="75.0" text="First Name" />
+          <TableColumn fx:id="lastNameCol" prefWidth="75.0" text="Last Name" />
+            <TableColumn fx:id="idCol" prefWidth="75.0" text="Id" />
+            <TableColumn fx:id="incomeCol" prefWidth="75.0" text="Income" />
+            <TableColumn fx:id="educationCol" prefWidth="75.0" text="Education" />
+            <TableColumn fx:id="ageCol" prefWidth="75.0" text="Age" />
+        </columns>
+      </TableView>
+      <TextField fx:id="idField" layoutX="55.0" layoutY="421.0" />
+      <Label layoutX="55.0" layoutY="404.0" text="ID" textFill="WHITE" />
+      <Button fx:id="deleteButton" layoutX="55.0" layoutY="452.0" mnemonicParsing="false" onAction="#deleteButtonPressed" stylesheets="@application.css" text="Delete" />
+      <Button fx:id="refreshButton" layoutX="334.0" layoutY="395.0" mnemonicParsing="false" onAction="#refreshButtonPressed" prefHeight="5.0" prefWidth="128.0" stylesheets="@application.css" text="Refresh Table">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Button>
+      <Label layoutX="197.0" layoutY="9.0" prefHeight="17.0" prefWidth="121.0" text="Worker's Info" textFill="WHITE">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

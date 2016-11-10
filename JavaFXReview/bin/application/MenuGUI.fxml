@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.shape.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="144.0" prefWidth="500.0" style="-fx-background-color: #3F424A;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.MenuController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#73818d" height="44.0" stroke="BLACK" strokeType="INSIDE" width="500.0" />
+      <Button fx:id="logoutButton" layoutX="13.0" layoutY="5.0" mnemonicParsing="false" onAction="#logoutButtonPressed" prefHeight="35.0" prefWidth="101.0" stylesheets="@application.css" text="Logout" />
+      <Button fx:id="workerTableButton" layoutX="22.0" layoutY="58.0" mnemonicParsing="false" onAction="#workerTableButtonPressed" prefHeight="35.0" prefWidth="129.0" stylesheets="@application.css" text="Worker Table">
+         <font>
+            <Font size="29.0" />
+         </font>
+      </Button>
+      <Button fx:id="graphButton" layoutX="22.0" layoutY="99.0" mnemonicParsing="false" onAction="#graphButtonPressed" prefHeight="35.0" prefWidth="129.0" stylesheets="@application.css" text="Graphs">
+         <font>
+            <Font size="29.0" />
+         </font>
+      </Button>
+      <Label layoutX="190.0" layoutY="10.0" prefHeight="17.0" prefWidth="121.0" text="Main Menu" textFill="WHITE">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Button fx:id="registerButton" layoutX="190.0" layoutY="58.0" mnemonicParsing="false" onAction="#registerButtonPressed" prefHeight="35.0" prefWidth="154.0" stylesheets="@application.css" text="Register Workers">
+         <font>
+            <Font size="29.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="250.0" prefWidth="500.0" style="-fx-background-color: #3F424A;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.RegisterController">
+   <children>
+      <Label layoutX="193.0" layoutY="6.0" prefHeight="17.0" prefWidth="115.0" text="Register" textFill="WHITE">
+         <font>
+            <Font size="27.0" />
+         </font>
+      </Label>
+      <TextField fx:id="firstNameField" layoutX="53.0" layoutY="69.0" />
+      <TextField fx:id="idField" layoutX="53.0" layoutY="122.0" />
+      <TextField fx:id="lastNameField" layoutX="234.0" layoutY="69.0" />
+      <TextField fx:id="incomeField" layoutX="234.0" layoutY="122.0" />
+      <Label layoutX="53.0" layoutY="45.0" prefHeight="17.0" prefWidth="115.0" text="First Name*" textFill="WHITE" />
+      <Label layoutX="234.0" layoutY="45.0" prefHeight="17.0" prefWidth="115.0" text="Last Name*" textFill="WHITE" />
+      <Label layoutX="53.0" layoutY="104.0" prefHeight="17.0" prefWidth="115.0" text="Id*" textFill="WHITE" />
+      <Label layoutX="234.0" layoutY="157.0" prefHeight="17.0" prefWidth="115.0" text="Age" textFill="WHITE" />
+      <Label layoutX="53.0" layoutY="157.0" text="Education" textFill="WHITE" />
+      <Label layoutX="234.0" layoutY="104.0" prefHeight="17.0" prefWidth="61.0" text="Income*" textFill="WHITE" />
+      <Button fx:id="registerButton" layoutX="407.0" layoutY="69.0" mnemonicParsing="false" onAction="#registerButtonPressed" stylesheets="@application.css" text="Register" />
+      <Button fx:id="cancelButton" layoutX="411.0" layoutY="174.0" mnemonicParsing="false" onAction="#cancelButtonPressed" stylesheets="@application.css" text="Cancel" />
+      <Label fx:id="statusLabel" layoutX="53.0" layoutY="219.0" prefHeight="17.0" prefWidth="297.0" textFill="WHITE" />
+      <ChoiceBox fx:id="educationField" layoutX="53.0" layoutY="179.0" prefWidth="150.0" />
+      <ChoiceBox fx:id="ageField" layoutX="233.0" layoutY="179.0" prefWidth="150.0" />
+   </children>
+</AnchorPane>
